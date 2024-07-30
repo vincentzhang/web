@@ -12,7 +12,7 @@
     gtag('config', 'UA-115804433-1');
   </script>
 
-<title>Vincent Zhang</title>
+<title>Vincent Zhang - PhD Candidate in Statistical Machine Learning at University of Alberta</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <style type="text/css">
  @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
@@ -75,6 +75,14 @@ body
 		position: relative;
 		background-color: #FFF;
 	}
+  div.clustrmaps
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    text-align: left;
+    position: relative;
+  }
 	div#DocInfo
 	{
 		color: #1367a7;
@@ -165,13 +173,14 @@ body
 
 	<table>
 	<tbody><tr>
-	<td><img id="myPicture" src="images/profile-small.jpg" style="float:left; padding-right:10px" height="180px"></td>
+	<td><img id="myPicture" src="images/profile.jpg" style="float:left; padding-right:20px;margin-top: -10px;" height="160px"></td>
 	<td>
 	<div id="DocInfo">
 		<h1>Zichen Zhang</h1>
-        Ph.D. Student at University of Alberta<br>
+        Ph.D. Candidate at University of Alberta<br>
         <br>Email: vincent.zhang at ualberta.ca<br>
-        <a href="CV_vzhang.pdf">CV</a> &bull; <a href="https://scholar.google.ca/citations?user=nSh2eD4AAAAJ&amp;hl=e">Google Scholar</a> &bull; <a href="https://github.com/vincentzhang">Github</a> &bull; <a href="https://www.linkedin.com/in/vincezhang">Linkedin</a> &bull; <a href="./blog"> Blog </a>
+        <!-- <a href="CV_vzhang.pdf">CV</a> &bull;  -->
+        <a href="https://scholar.google.ca/citations?user=nSh2eD4AAAAJ&amp;hl=e">Google Scholar</a> &bull; <a href="https://github.com/vincentzhang">Github</a> &bull; <a href="https://www.linkedin.com/in/vincezhang">Linkedin</a> &bull; <a href="./blog"> Blog </a>
 	</div><br>
     <div id="ua_logo">
         <a href="https://www.ualberta.ca/"><img src="images/UA-COLOUR.png" height="60px" /></a>
@@ -182,17 +191,20 @@ body
 
 	<h2>About Me</h2>
     <ul>
-    <li> I'm a second-year Computer Science Ph.D. student at University of Alberta, supervised by Dr. <a href="https://webdocs.cs.ualberta.ca/~jag/">Martin Jagersand</a> and Dr. <a href="https://webdocs.cs.ualberta.ca/~dale/">Dale Schuurmans</a>. </li>
-      <li> My interest lies in the intersection of Machine Learning, Computer Vision and Robotics. I had some experience with dictionary learning, under supervision of Dr. <a href="https://webdocs.cs.ualberta.ca/~dana/"> Dana Cobzas</a>. </li>
+    <li> I'm a Ph.D Candidate in CS with a specialization in Statistical Machine Learning, at the University of Alberta, supervised by Dr. <a href="https://webdocs.cs.ualberta.ca/~jag/">Martin Jagersand</a> and Dr. <a href="https://webdocs.cs.ualberta.ca/~dale/">Dale Schuurmans</a>. </li>
+      <li> My interest lies in the intersection of Machine Learning, Robotics, and Computer Vision.
+        <!-- I had some experience with dictionary learning, under supervision of Dr. <a href="https://webdocs.cs.ualberta.ca/~dana/"> Dana Cobzas</a>. </li> -->
     </ul>
 
     <h2>Updates</h2>
     <ul>
+        <li>[2019/10] One paper accepted at NeurIPS19 CausalML Workshop. </li>
         <li>[2019/02] One paper accepted at CVPR19. </li>
-        <li>[2019/02] <a href="https://arxiv.org/abs/1902.06426">A joint paper released </a> about 2017 Robotic Instrument Segmentation Challenge at MICCAI </li>
+        <li>[2019/02] <a href="https://arxiv.org/abs/1902.06426">A joint paper </a> about 2017 Robotic Instrument Segmentation Challenge at MICCAI </li>
     	<li>[2019/01] Two papers accepted at ICRA19. </li>
         <li>[2018/07] Attended the <a href="https://dlrlsummerschool.ca/">deep learning and reinforcement learning summer school</a> in Toronto</li>
-        <li>[2018/04] Attended Hannover Messe, representing our team to compete in the final of <a href="https://www.kuka.com/en-de/technologies/research-and-innovation/kuka-innovation-award/kuka-innovation-award-2018" >KUKA Innovation Award 2018</a> </li>
+        <li>[2018/04] Represented our team in the <a href="https://www.kuka.com/en-de/future-production/innovation-and-research/kuka-innovation-award/kuka-innovation-award-2018">
+          KUKA Innovation Award 2018</a> world final at Hannover, Germany</li>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/aLcw73dt_Oo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/qhXWytFFwVo?rel=0&amp;start=429" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </ul>
@@ -202,16 +214,35 @@ body
 	<tbody>
     <tr>
       <td class="pub_td1">
+        <img src="images/rsbnet-diagram.png" class="papericon">
+      </td>
+                <td class="pub_td2"> <b> Reducing Selection Bias in Counterfactual Reasoning for Individual Treatment Effects Estimation </b> [<a href="https://arxiv.org/pdf/1912.09040">pdf</a>]
+              <br> <b>Zichen Zhang</b>, Qingfeng Lan, Lei Ding, Yue Wang, Negar Hassanpour, Russell Greiner. 
+              <br> Poster Spotlight @ NeurIPS 2019 CausalML Workshop. </td></tr>
+    <tr>
+      <td class="pub_td1">
+        <img src="images/PR2020-qual.png" class="papericon">
+      </td>
+                <td class="pub_td2"> <b> U^2-Net: Going Deeper with Nested U-Structure for Salient Object Detection </b> [<a href="https://www.sciencedirect.com/science/article/pii/S0031320320302077?dgcid=coauthor">pdf</a>][<a href="https://github.com/NathanUA/U-2-Net">code</a>  ]
+              <br> Xuebin Qin, <b>Zichen Zhang</b>, Chenyang Huang, Masood Dehghan, Osmar R. Zaiane, Martin Jagersand, Pattern Recognition 2020. </td></tr>
+    <tr>
+      <td class="pub_td1">
+        <img src="images/cvpr19.png" class="papericon">
+      </td>
+                <td class="pub_td2"> <b> BASNet: Boundary-Aware Salient Object Detection </b> [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Qin_BASNet_Boundary-Aware_Salient_Object_Detection_CVPR_2019_paper.pdf">pdf</a>][<a href="http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Qin_BASNet_Boundary-Aware_Salient_CVPR_2019_supplemental.pdf">supp</a>][<a href="https://github.com/NathanUA/BASNet">code</a>  ]
+              <br> Xuebin Qin, <b>Zichen Zhang</b>, Chenyang Huang, Chao Gao, Masood Dehghan, Martin Jagersand, CVPR 2019. </td></tr>
+    <tr>
+      <td class="pub_td1">
         <img src="images/kuka-system.png" class="papericon">
       </td>
       <td class="pub_td2"> <b> Online Tool and Task learning via Human Robot Interaction </b> [<a href="https://arxiv.org/abs/1809.08722">pdf</a>]
-              <br> Masood Dehghan<sup>∗</sup>, <b>Zichen Zhang<sup>∗</sup></b>, Mennatullah Siam<sup>∗</sup>, Jun Jin, Laura Petrich and Martin Jagersand, accepted at ICRA 2019. <br/>* equal contribution</td></tr>
+              <br> Masood Dehghan<sup>∗</sup>, <b>Zichen Zhang<sup>∗</sup></b>, Mennatullah Siam<sup>∗</sup>, Jun Jin, Laura Petrich and Martin Jagersand, ICRA 2019. <br/>* equal contribution</td></tr>
 
     <tr>
       <td class="pub_td1">
         <img src="images/thesisUA/Overviewfinal.png" class="papericon">
       </td>
-      <td class="pub_td2"> <b> End-to-end detection-segmentation network with ROI convolution </b> [<a href="https://arxiv.org/abs/1801.02722">pdf</a>]
+      <td class="pub_td2"> <b> End-to-end detection-segmentation network with ROI convolution </b> [<a href="https://github.com/vincentzhang/roi-fcn">code</a>] [<a href="https://arxiv.org/abs/1801.02722">pdf</a>]
 <br> <b>Zichen Zhang</b>, Min Tang, Dana Cobzas, Dornoosh Zonoobi, Martin Jagersand, Jacob L. Jaremko, ISBI 2018
 </td></tr>
 
@@ -237,10 +268,10 @@ Segmentation</b> [<a href="https://arxiv.org/pdf/1705.06260.pdf">pdf</a>]
           <img src="images/lesion/v10.jpg" class="papericon"></td>
           <td class="pub_td2"> <b> Semantic Segmentation using Dictionary Learning </b> [<a href="http://webdocs.cs.ualberta.ca/~zichen2/papers/lesion_report.pdf">Report</a>] [<a href="https://github.com/uavis/mlproj">Code</a>] </h3>
     <p> <img src="images/lesion/ms_lesion_workflow.png" class="papericon"> </p>
-     <p> We study the pipepline of semantic segmentation using dictionary learning.
+     <!-- <p> We study the pipepline of semantic segmentation using dictionary learning.
      The algorithm is applied on MRI image for Multiple Sclerosis segmentation and aerial images for building segmentation.
      The empirical results show that preprocessing is substantially important for the pipeline and the performance can be bounded
-     with improper preprocessing.
+     with improper preprocessing. -->
      </p>
  </td></tr>
 
@@ -268,11 +299,12 @@ A quantitative analysis including the comparison with random planner and simulat
 GraspIt! simulator is used for implementing the proposed algorithm and as the test environment.
 </p> -->
 </td></tr>
+</tbody></table>
 
-
-
-	</tbody></table>
-
+    <h2>Service</h2>
+    <ul>
+        <li>Reviewer for ICRA2018, IROS2020, Transaction in Image Processing.</li>
+    </ul>
     <h2>Honors</h2>
         <ul>
             <li> Science Graduate Scholarship, 2018, Faculty of Science, University of Alberta</li>
@@ -290,10 +322,14 @@ GraspIt! simulator is used for implementing the proposed algorithm and as the te
           -->
         </ul>
 
-
-
-
+  <div class='clustrmaps'>
+<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=648bf2&w=a&t=n&d=oOXmPOlhegwC9y2B6T76Nmp0peLw2ZwaiizK8Sgydcs&co=ffffff'></script>
+  </div>
 
 </div>
+
+  
 </div>
+
+
 </body></html>
